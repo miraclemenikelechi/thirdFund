@@ -1,5 +1,5 @@
 :root {
-    --font-size: 16px;
+    --font-size: 18px;
     --mobile-font-size: 14px;
     --white: rgb(255, 255, 255);
     --black: rgb(0, 0, 0);
@@ -58,7 +58,7 @@ body>a:nth-child(1)>ion-icon {
 }
 
 main {
-    margin: 70px 20px;
+    padding: 70px 20px;
     display: flex;
     justify-items: center;
     align-items: center;
@@ -82,14 +82,16 @@ main>p {
 .spotlight-options {
     display: flex;
     justify-content: space-between;
-    width: 100%;
+    /* width: 100%; */
 }
 
 .spotlight-options>ul {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     list-style-type: none;
     flex-direction: column;
+    margin: 0 20px;
+    align-items: center;
 }
 
 .spotlight-options>ul>li {
@@ -98,10 +100,14 @@ main>p {
     text-transform: capitalize;
     background: var(--green-dark);
     margin: 10px 0;
-    padding: 12px;
+    height: 50px;
+    width: 100px;
     border-radius: 10px;
     color: var(--white);
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .spotlight-options .tab-active {
@@ -153,4 +159,20 @@ main>p {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+@media (min-width: 1025px) {
+    * {
+        font-size: var(--font-size);
+    }
+
+    body {
+        max-width: 50%;
+        margin: 0 auto;
+        position: relative;
+    }
+
+    .spotlight-options>ul>li {
+        width: 150px;
+    }
 }

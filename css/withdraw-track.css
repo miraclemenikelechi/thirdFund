@@ -1,5 +1,5 @@
 :root {
-    --font-size: 16px;
+    --font-size: 18px;
     --mobile-font-size: 14px;
     --white: rgb(255, 255, 255);
     --black: rgb(0, 0, 0);
@@ -28,6 +28,7 @@ body>a {
     position: absolute;
     right: 3%;
     top: 2%;
+    z-index: 1;
 }
 
 body>a>ion-icon {
@@ -87,6 +88,7 @@ main>section>label {
     position: absolute;
     right: 0;
     top: 10vh;
+    margin: 0 25px;
 }
 
 .withdraw-section>label {
@@ -151,6 +153,7 @@ main>section>label {
 .track-section>div {
     position: absolute;
     right: 0;
+    margin: 0 25px;
 }
 
 .track-section>div>h3 {
@@ -194,4 +197,21 @@ main>section>label {
 .track-section>div>form>button>ion-icon {
     font-size: 1.3rem;
     color: var(--white);
+}
+
+@media (min-width: 1025px) {
+    * {
+        font-size: var(--font-size);
+    }
+
+    body {
+        max-width: 70%;
+        margin: 0 auto;
+        position: relative;
+    }
+
+    main [class*="section"] {
+        margin-top: 100px;
+        z-index: 1;
+    }
 }

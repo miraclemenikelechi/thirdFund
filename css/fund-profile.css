@@ -1,5 +1,5 @@
 :root {
-    --font-size: 16px;
+    --font-size: 18px;
     --mobile-font-size: 14px;
     --white: rgb(255, 255, 255);
     --black: rgb(0, 0, 0);
@@ -71,7 +71,6 @@ header>p>ion-icon {
 .about-section>h5 {
     text-transform: capitalize;
     font-weight: 500;
-    /* margin-bottom: 5px; */
 }
 
 .about-section>p {
@@ -193,12 +192,13 @@ header>p>ion-icon {
     padding: 20px;
     border-radius: 30px;
     color: rgba(0, 0, 0, 0.8);
+    width: 12rem;
 }
 
 .withdraw-box>div:nth-of-type(1)>div:nth-of-type(2)>div>img {
     position: absolute;
     bottom: 40%;
-    right: 3%;
+    right: 5%;
 }
 
 .withdraw-box>div:nth-of-type(2) {
@@ -231,4 +231,16 @@ header>p>ion-icon {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+@media (min-width: 1025px) {
+    * {
+        font-size: var(--font-size);
+    }
+
+    body {
+        max-width: 50%;
+        margin: 0 auto;
+        position: relative;
+    }
 }
